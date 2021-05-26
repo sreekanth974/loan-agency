@@ -7,6 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/dffb331276.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/dffb331276.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>MV Cash</title>
 </head>
 <body>
@@ -14,48 +17,38 @@
     <!-----------------------HERO SECTION------------------------>
 
     <div class="hero-section">
-        <div class="nav-first">
-            <div class="logo">
-                <img src="img/logo.png" alt="logo">
-            </div>
-            <div class="first-nav">
-                <ion-icon name="location-outline" style="color: #5c3c92; ;font-size: 20px;"></ion-icon>
-                <span class="text">2000, Blv Hills Road, Boston, USA</span>
-            
-                <ion-icon name="mail-outline" style="color: #5c3c92;;font-size: 20px;"></ion-icon>
-                <span class="text">info@mvcash.com</span>
-            
-                <ion-icon name="call-outline" style="color:#5c3c92; ;font-size: 20px;"></ion-icon>
-                <span class="text">+389 071- 4545- 4339</span>
-            </div>
-        
-
-            <button><a href="#">Contact an agent</a></button>
-        </div>
-
-
+         
         <div class="nav-secound">
-            <li><a href="#">Home</a></li>
+            <div><h1 id="lna">Loan Agency</h1></div>
+            <a class="toggle-button" href="#">
+                <span id="bar1" class="bar"></span>
+                <span id="bar2" class="bar"></span>
+                <span id="bar3" class="bar"></span>
+            </a>
+           <div class="navbar-links">
+
+         
+            <li><a href="#wrapp">Home</a></li>
             
             <div class="dropdown">
-                <button class="dropbtn">Services
+              <a href="#rsv"> <button class="dropbtn">Services
                     <ion-icon name="caret-down-outline" style="color:#5c3c92;"></ion-icon>
-                </button>
+                </button></a> 
                 <div class="dropdown-content">
-                <a href="#">Home loan</a>
-                <a href="#">Personal loan</a>
-                <a href="#">Education loan</a>
-                <a href="#">Car loan</a>
+                <a href="#srv">Home loan</a>
+                <a href="#srv">Personal loan</a>
+                <a href="#srv">Education loan</a>
+                <a href="#srv">Car loan</a>
                 </div>
                 </div>
                 <div class="dropdown">
-                    <button class="dropbtn">Payment
+                    <button  class="dropbtn">Payment
                         <ion-icon name="caret-down-outline" style="color:#5c3c92;"></ion-icon>
-                    </button>
+                    </button> 
                     <div class="dropdown-content">
-                        <a href="#">30 days deal</a>
-                        <a href="#">6 months deal </a>
-                        <a href="#">1 year deal</a>
+                        <a href="#pym">30 days deal</a>
+                        <a href="#pym">6 months deal </a>
+                        <a href="#pym">1 year deal</a>
                     </div>
                 </div>
                 
@@ -64,20 +57,21 @@
                         <ion-icon name="caret-down-outline" style="color:#5c3c92;"></ion-icon>
                     </button>
                     <div class="dropdown-content">
-                    <a href="#">Apply for job</a>
-                    <a href="#">Our network</a>
-                    <a href="#">What we offer</a>
+                    <a href="#test">Apply for job</a>
+                    <a href="#test">Our network</a>
+                    <a href="#test">What we offer</a>
                 </div>  
             </div>  
              
-            <li><a href="news"><ion-icon name="search-outline" style="color:#5c3c92 ;font-size: 20px;"></ion-icon></a></li>
+            <!-- <li><a href="news"><ion-icon name="search-outline" style="color:#5c3c92 ;font-size: 20px;"></ion-icon></a></li>
             <li><a href="news"><ion-icon name="newspaper-outline" style="color:#5c3c92;font-size: 20px;"></ion-icon></a></li>
-            <li><a href="news"><ion-icon name="wallet-outline" style="color:#5c3c92;font-size: 20px;"></ion-icon></a></li>
-            <li><a href="#"class="sign">Sign up</a></li>
-
+            <li><a href="news"><ion-icon name="wallet-outline" style="color:#5c3c92;font-size: 20px;"></ion-icon></a></li> -->
+            <li><a href="#cont"class="sign">Contact us</a></li>
+            <li><a href="#sigg"class="sign">Sign up</a></li>
+         </div>
         </div>
 
-        <div class="wrapper-hero">
+        <div class="wrapper-hero" id="wrapp">
             <div class="bottom-hero">
 
                 <div class="cta">
@@ -91,18 +85,23 @@
                 <img src="img/hero-new.jpg" alt="">
             </div>
         </div>
+    
     </div>
-
+    <div>
+        <div><a href="#lna" class="mn1">
+            <i class="fa fa-4x fa-arrow-up" aria-hidden="true"></i>
+        </a></div>
+    </div>
      <!-----------------------ABOUT US SECTION------------------------>
 
 
-    <div class="wrapper-about">
+    <div class="wrapper-about" id="abwr">
         <div class="team-img" data-aos="fade-right">
             <img src="img/about-us1.jpg" alt="">
         </div>
 
         <div class="stats">
-            <div class="stat-column" data-aos="fade-left">
+            <div class="stat-column"  data-aos="fade-down">
                 <div class="number">
                     <div class="number1">
                         <h1>50+</h1>
@@ -114,7 +113,7 @@
                 </div>
             </div>
 
-            <div class="stat-column" data-aos="fade-left">
+            <div class="stat-column"  data-aos="fade-down" >
                 <div class="number">
                     <div class="number1">
                         <h1>500+</h1>
@@ -126,7 +125,7 @@
                 </div>
             </div>
 
-            <div class="stat-column" data-aos="fade-left">
+            <div class="stat-column"  data-aos="fade-down" >
                 <div class="number">
                     <div class="number1">
                         <h1>5k+</h1>
@@ -139,29 +138,29 @@
             </div>
         </div>
 
-        <div class="background">
+        <!-- <div class="background">
 
         </div>
         <div class="background2">
 
-        </div>
+        </div> -->
     </div>
 
 
     <!------------------OUR SERVICES------------------>
-    <div class="main-wrapper-services">
+    <div class="main-wrapper-services" id="srv">
         <h3>our services</h3>
         <h1>How we can help you</h1>
 
         <div class="wrapper-services">
-            <div class="background3">
+            <!-- <div class="background3">
 
             </div>
             <div class="background4">
 
-            </div>
+            </div> -->
             <div class="services">
-                <div class="service-column" data-aos="fade-up-right">
+                <div class="service-column" data-aos="fade-down">
                     <div class="service-text">
                         <h2>Home loan</h2>
                         <p>Lorg elit. Nam ut erat quis elit volutpatNam ut eratem ipsum dolor sit amet, consectetur adipiscin</p>
@@ -172,7 +171,7 @@
                     </div>
                 </div>
 
-                <div class="service-column" data-aos="fade-up-right">
+                <div class="service-column" data-aos="fade-down">
                     <div class="service-text">
                         <h2>Personal loan</h2>
                         <p>Lorg elit. Nam ut erat quis elit volutpatNam ut eratem ipsum dolor sit amet, consectetur adipiscin</p>
@@ -183,7 +182,7 @@
                     </div>
                 </div>
 
-                <div class="service-column" data-aos="fade-up-right">
+                <div class="service-column" data-aos="fade-down">
                     <div class="service-text">
                         <h2>Student loan</h2>
                         <p>Lorg elit. Nam ut erat quis elit volutpatNam ut eratem ipsum dolor sit amet, consectetur adipiscin</p>
@@ -202,7 +201,7 @@
             </div>
 
             <div class="services">
-                <div class="service-column" data-aos="fade-up-left">
+                <div class="service-column" data-aos="fade-down">
 
                     <div class="service-icon">
                         <ion-icon name="car-sport-outline" style="color:#5c3c92 ;font-size: 50px;"></ion-icon>
@@ -215,7 +214,7 @@
                     
                 </div>
 
-                <div class="service-column" data-aos="fade-up-left">
+                <div class="service-column" data-aos="fade-down">
 
                     <div class="service-icon">
                         <ion-icon name="medkit-outline" style="color:#5c3c92 ;font-size: 50px;"></ion-icon>
@@ -228,7 +227,7 @@
                     
                 </div>
 
-                <div class="service-column" data-aos="fade-up-left">
+                <div class="service-column" data-aos="fade-down">
                     <div class="service-icon">
                         <ion-icon name="business-outline" style="color:#5c3c92 ;font-size: 50px;"></ion-icon>
                     </div>
@@ -288,6 +287,7 @@
         </div>
 
         <div class="why-us-info" data-aos="flip-left">
+            <div class="inff">
             <h1>Why choose Us</h1>
             <p>Nam ut erat quis elit volutpatNam ut eratem ipsum dolor sit amet, consectetur adipiscin</p>
 
@@ -300,6 +300,7 @@
            
 
             <button><a href="#">See more</a></button>
+        </div>
         </div>
     </div>
 
@@ -321,7 +322,7 @@
     <!-----------------------PRICNG PLANS------------------------>
     
     
-    <div class="wrapper-plans">
+    <div class="wrapper-plans" id="pym">
         <h1>Check out our solutions for your needs</h1>
         <span class="four-point-star"></span>
         <div class="wrapper-price-columns">
@@ -376,7 +377,7 @@
 
     <!------------------------TESTIMONIALS----------------------->
 
-    <div class="wrapper-testimonials">
+    <div class="wrapper-testimonials" id="test">
         <h1>What people have to say about us</h1>
 
         <div class="testimonials">
@@ -507,7 +508,25 @@
     
     <div class="blog-article-wrapper">
         
-        <button onclick="mySlides()" style=" margin-top: 20.5rem;margin-left: 45rem;padding: 1rem; padding-left: 5rem; padding-right: 5rem; background-color:#fff ;font-size: 1.6rem; color:#fff;border:none"><span style=" text-transform: uppercase;margin-left:-2rem; margin-right: 4rem;background-color: #765f9c;">blog posts</span> <span style="background-color: #765f9c; font-size: 1.6rem;  text-transform: uppercase; "> articles</span></button>
+        <button onclick="mySlides()" style=" margin-top: 20.5rem; padding: 1rem;   background-color:#fff ;font-size: 1.6rem; color:#fff;border:none">
+            <span style="     text-transform: uppercase;
+            /* margin-left: -2rem; */
+            /* margin-right: 4rem; */
+            background-color: #765f9c;
+            margin: 4rem;
+            /* height: 30px; */
+            /* width: 30rem; */
+            font-size: 27px;">blog posts</span></button>
+             <button   onclick="mySlides()" style="    border: none;
+             color: aliceblue;"> <span style="    text-transform: uppercase;
+             /* margin-left: -2rem; */
+             /* margin-right: 4rem; */
+             background-color: #765f9c;
+             margin: -2rem;
+             /* height: 30px; */
+             /* width: 30rem; */
+             font-size: 27px; "> articles</span>
+            </button>
 
     
 
@@ -578,19 +597,11 @@
 
 
     <!-----------------------CONTACT US------------------------>
-    <div class="wrapper-contact1" data-aos="zoom-out">
+    <div class="wrapper-contact1" data-aos="fade-down" id="sigg">
         <h1>Contact us</h1>
         <div class="wrapper-contact">
             
-            <div class="contact-images">
-                <div class="contact-img1">
-                    <img src="img/contact-us.jpg" alt="">
-                </div>
-                
-                <div class="contact-img2">
-                    <img src="img/contact-us.jpg" alt="">
-                </div>
-            </div>
+            
 
             
             
@@ -598,7 +609,7 @@
                 
                 <p>Drop us a line and let our agents take care of you</p>
                     
-                    <div class="contact-container">
+                    <div class="contact-container" data-aos="fade-down">
                         <div class="column2">
                             <form class="contact-form">
                                 <label for="fname"> Name:</label>
@@ -625,15 +636,7 @@
                 
             </div>
 
-            <div class="contact-images1">
-                <div class="contact-img3">
-                    <img src="img/contact-us.jpg" alt="">
-                </div>
-                
-                <div class="contact-img4">
-                    <img src="img/contact-us.jpg" alt="">
-                </div>
-            </div>
+            
         </div>
     </div>
     <span class="four-point-star"></span>
@@ -714,14 +717,14 @@
             </div>
 
             <div class="ending">
-                <p class="copy">© 2020. MV Cash .All Rights Reserved</p>
+                <p class="copy">© 2021. web student team  .All Rights Reserved</p>
                 <div class="links">
                     <p><a href="#">Terms of service</a></p>
                     <p><a href="#">Privacy policy</a></p>
                     <p><a href="#">Security</a></p>
                 </div>
 
-                <div class="social1">
+                <div class="social1" id="cont">
                     <li><a href="#" class="fb"><ion-icon name="logo-facebook" style=" color:#fff;font-size: 20px;"></ion-icon></a></li>
                     <li><a href="#" class="tw"><ion-icon name="logo-twitter" style=" color:#fff;font-size: 20px;"></ion-icon></a></li>
                     <li><a href="#" class= "gp" style=" color:#fff;font-size: 20px;"><ion-icon name="logo-instagram"></ion-icon></a></li>
@@ -734,10 +737,24 @@
     </div>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src= "script.js"></script> 
+    <script src= "faq.js"></script> 
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script>
       AOS.init({
         delay:500
       });
+</script>
+<script>
+    const togglebutton = document.getElementsByClassName('toggle-button')[0];
+    const navbarlinks = document.getElementsByClassName('navbar-links')[0];
+    togglebutton.addEventListener('click', () => {
+        navbarlinks.classList.toggle('active');
+        togglebutton.classList.toggle('chang');
+    });
 </script>
 </body>
 </html>
